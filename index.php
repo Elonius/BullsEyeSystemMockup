@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js"></script>
+        <title>BullsEye System - Mockup 1.0</title>
+    </head>
+
+    <body>
+        <h1>BullsEye System</h1>
+        <div id="container">
+            <img src="images/BullsEyePic.png" alt="BullsEye Sporting Goods Logo" class="logo">
+            <form action="pages/postLogin.php" method="POST">
+                <div id="login" class="box">
+                    Username: <input type="text" name="username" value="CEO"><br>
+                    Password: <input type="password" name="password" value="tjFfuyUd.G6d6dfh">
+                    <br><br>
+                    <button class="btn" type="submit">Log In</button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
