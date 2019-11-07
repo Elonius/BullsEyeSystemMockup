@@ -15,9 +15,9 @@
         // Use header("location: store/regional/finance.php") depending on user ??
         if ($user == "CEO") {
             $title = "Regional Manager";
-        } else if ($user == "FinanceManager") {
+        } else if ($user == "FinanceMgr") {
             $title = "Finance Manager";
-        } else if ($user == "StoreManager") {
+        } else if ($user == "StoreMgr") {
             $title = "Store Manager";
         }
 

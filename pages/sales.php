@@ -11,24 +11,22 @@
         <form action="salesReport.php" method="POST">
             <?php
             session_start();
-            $store = "";
-            if (isset($_POST['store'])) {
-                $store = $_POST['store'];
-            }
+            $store = filter_input(INPUT_POST, "store");
             $_SESSION['store'] = $store;
+            
             echo "<h1>Sales for " . $store . "</h1>";
             ?>
         </h1>
         <div class="flex-container">
-            
+
             <button type="submit" name="submit" value="Daily">Daily</button>
             <form action="salesReport.php" method="POST">
-            <button type="submit" name="submit" value="Weekly">Weekly</button>
-            <form action="salesReport.php" method="POST">
-            <button type="submit" name="submit" value="Monthly">Monthly</button>
-            <button type="submit" name="submit" value="Yearly">Yearly</button>
-    </form>
-</div>
-<div class="content"></div>
+                <button type="submit" name="submit" value="Weekly">Weekly</button>
+                <form action="salesReport.php" method="POST">
+                    <button type="submit" name="submit" value="Monthly">Monthly</button>
+                    <button type="submit" name="submit" value="Yearly">Yearly</button>
+                </form>
+        </div>
+        <div class="content"></div>
 </body>
 </html>

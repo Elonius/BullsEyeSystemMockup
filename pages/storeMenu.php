@@ -1,11 +1,8 @@
 <?php
 $projectRoot = filter_input(INPUT_SERVER, "DOCUMENT_ROOT") . '/Systems_Mockup_ReportSystem';
 require_once ($projectRoot . '/utils/ChromePhp.php');
-$option = "";
-$store = "";
-if (isset($_POST['submit'])) {
-    $option = $_POST['submit'];
-}
+
+$option = filter_input(INPUT_POST, "submit");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +15,7 @@ if (isset($_POST['submit'])) {
         <title>BullsEye System - Mockup 1.0</title>
     </head>
     <body>
-        <?php echo "<form action=" .$option .".php method=POST"?>
+        <?php echo "<form action=" . $option . ".php method=POST" ?>
         <form action=.php" method="POST">
             <h1>Select Store</h1>
             <select name="store">
