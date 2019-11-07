@@ -16,6 +16,7 @@
             <form action="pages/postLogin.php" method="POST">
                 <div id="login" class="box">
                     Username: <input type="text" name="username" value="CEO"><br>
+                    CEO | StoreMgr | FinanceMgr<br>
                     Password: <input type="password" name="password" value="tjFfuyUd.G6d6dfh">
                     <br><br>
                     <button class="btn" type="submit">Log In</button>

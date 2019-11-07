@@ -8,9 +8,7 @@
     </head>
     <?php
     $store = "";
-    if (isset($_POST['store'])) {
-        $store = $_POST['store'];
-    }
+    $store = filter_input(INPUT_POST, "store");
     echo "<h1>BullsEye Warehouse Inventory</h1><br><br>";
     ?>
     <div id="invContainer">
