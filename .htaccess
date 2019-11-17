@@ -1,0 +1,6 @@
+#URL mapping for REST API Demo
+#Note: "NC" means case insensitive
+RewriteEngine on
+
+RewriteRule ^bullseye/items api/BullsEyeItems.php [NC]
+RewriteRule ^bullseye/items/([0-9]+)$ api/BullsEyeItems.php?itemID=$1 [NC]

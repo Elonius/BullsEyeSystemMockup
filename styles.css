@@ -14,7 +14,7 @@ input {
     margin: 10px;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
@@ -140,13 +140,18 @@ button {
     padding: 10px;
 }
 
-#weaponLevelInput,
-#weaponDamageInput,
-#weaponIDInput {
-    width: 50px;
+#yellow {
+    background-color: yellow;
 }
 
-#weaponDescriptionInput,
-#weaponLocationInput {
-    width: 375px;
+#white{
+    background-color: white;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#green {
+    background-color: lightgreen;
 }

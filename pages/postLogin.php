@@ -19,8 +19,9 @@
             $title = "Finance Manager";
         } else if ($user == "StoreMgr") {
             $title = "Store Manager";
+        } else if ($user == "Warehouse") {
+            $title = "Warehouse Foreman";
         }
-
         echo "<h1>Logged In as $title</h1><br>";
         ?>
 
@@ -37,7 +38,13 @@
                     <button class="btn" type="submit" name="submit" value="trends">Trends</button><br><br>
                 </form>
                 <form action="inventoryMenu.php" method="POST">
-                    <button id="inventory" class="btn" type="submit" name="submit" value="inventory">Inventory</button><br>
+                    <button id="inventory" class="btn" type="submit" name="submit" value="inventory">Inventory</button><br><br>
+                </form>
+                <form action="storeMenu.php" method="POST">
+                    <button class="btn" type="submit" name="submit" value="weeklyOrder">Weekly Order</button><br><br>
+                </form>
+                <form action="allOrders.php" method="POST">
+                    <button class="btn" type="submit" name="submit" value="weeklyOrder">All Orders</button><br>
                 </form>
             </div>
         </div>
